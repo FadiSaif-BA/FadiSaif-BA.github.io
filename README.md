@@ -91,6 +91,7 @@
 ---
 
 ## 📚 Professional Training Opportunities
+| Course | Institution | Dates |
 | :--- | :--- | :--- |
 | **Mastering Form Design in KoBo Toolbox – Advanced** | Humanitarian Data Solutions | August 2021
 | **MEAL DPro Flex** | Humentum | July 2020
