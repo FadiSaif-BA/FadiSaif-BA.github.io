@@ -10,7 +10,9 @@
 | :--- | :--- |
 | **Data Analysis & Modeling** | Data Wrangling, Data Quality Assurance (DQA), ETL Processes, Exploratory Data Analysis (EDA), Statistical Testing, Inferential Analysis. |
 | **Programming & Query Languages** | Python, SQL, Java. |
-| **Technical Tools & Platforms** | **Advanced Statistics:** SPSS, JMP, MS Excel (Advanced); **Database Management:** SQL Server, Oracle 11G; **IDE & BI:** MS Visual Studio, VS Code, Anaconda, Jupyter, MS Power BI. |
+| **Technical Tools & Platforms** | **Advanced Statistics:** SPSS, JMP, MS Excel (Advanced); 
+                                    **Database Management:** SQL Server, Oracle 11G; 
+                                    **IDE & BI:** MS Visual Studio, VS Code, Anaconda, Jupyter, MS Power BI. |
 | **Project & Program Management** | Project Lifecycle Management, Monitoring & Evaluation (M&E), Stakeholder Analysis, Coordination, Process Streamlining. |
 | **Strategic & Business Planning** | Strategic Planning & Execution, Organizational Design, Talent Development, Team Synergy & Cohesion, Critical Thinking, Problem Solving. |
 
@@ -95,13 +97,9 @@
 | :--- | :--- | :--- |
 | **Mastering Form Design in KoBo Toolbox – Advanced** | Humanitarian Data Solutions | August 2021
 | **MEAL DPro Flex** | Humentum | July 2020
-| **MEAL in Emergencies** | Institute for Capacity Strengthening (ICS) | March 2018
-| **Information Security & Basic & Advanced Security on the Field** | UNDSS | June 2018 / December 2017
-| **Building a Better Response – Complex Humanitarian Emergencies** | Humanitarian Academy, Harvard | May 2018
 | **Leadership Skills Development (26 hours)** | Creative People’s Solutions (CPS) | May 2017
 | **Oracle 11G DBA (68 hours)** | University of Science and Technology | February 2014
 | **Oracle 10G Developer (80 hours)** | University of Science and Technology | February 2014
-| **MCITP Windows Server Administration** | NYCT | November 2012
 
 ---
 
