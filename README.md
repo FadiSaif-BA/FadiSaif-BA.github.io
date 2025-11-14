@@ -30,6 +30,7 @@
 * Led research initiatives, producing findings that informed strategic decision-making and program adjustments, including a **Health Facility Assessment of 100 facilities** and a **Context and Fragility Assessment**.
 * Led design and engineering of the project database and **data management system (ETL)**, flow, and automation process, utilizing **SQL** language and MS Excel.
 * Served as **Acting Project Director for two months**, successfully navigating a challenging period of **30% global budget cuts** with limited impact on project implementation and quality.
+
 **Skills Applied:** Descriptive analysis, IBM SPSS, Excel, SQL, Coordination, Leadership, Critical Thinking, Problem Solving.
 
 ### MEAL Coordinator, Polish Humanitarian Action
@@ -38,6 +39,7 @@
 * Led and oversaw the implementation of **9 post-service monitoring activities** utilizing **PPS sampling** methods and **ETL** processing for over 450 beneficiaries.
 * Oversaw post-service monitoring targeting **16,369 IDPs and host community members** across 16 IDP sites in a high-insecurity context.
 * Led the design and implementation of **3 multi-sectoral needs assessments** for project proposals, securing **$200K USD** in PAH international funding and receiving the highest score among Polish-MoFA applications.
+
 **Skills Applied:** EDA, Descriptive analysis, Excel, Coordination, Leadership, Critical Thinking, Problem Solving.
 
 ### MEAL Coordinator, ADRA Yemen
@@ -46,6 +48,7 @@
 * Developed and managed a **$35M MEAL system** for projects in Yemen, establishing standardized procedures for data quality, consistency, and integrity.
 * Successfully led and guided the design and implementation of **four impact research initiatives**, including comparative studies on food assistance models and irrigation techniques.
 * Participated in the lead project design and proposal writing committee for USAID/BHA projects, leading to the securing of over **$30M USD awards** over two consecutive years.
+
 **Skills Applied:** IBM SPSS, SQL, Inferential analysis, Statistics, Coordination, Leadership, Critical Thinking, Problem Solving.
 
 ### Monitoring and Evaluation Officer, ADRA Yemen
@@ -54,6 +57,7 @@
 * Devised and implemented a **comprehensive data collection and reporting mechanism**, bolstering project transparency and stakeholder engagement.
 * Played a key role in the **implementation and design of assessment studies** utilized for problem statements and proposal design for USAID/BHA grants.
 * Played a key role in the implementation of **baseline and endline studies**, including data collection tool development, field surveys, and data analysis to assess project impact.
+
 **Skills Applied:** MS Excel, SQL, Report writing, Data Collection Streamlining.
 
 ### Reporting Assistant, ADRA Yemen
@@ -66,6 +70,7 @@
 * Managed the international education unit, exceeding donor expectations in scholarship program delivery and advising services. Assisted over **50 advice seekers** and deployed over **24 international students** to pursue education in the USA and MENA region.
 * Oversaw AMIDEAST's International Testing Centre, successfully delivered **98% of tests on schedule** and passed **100% of audit requirements** (ETS, College Board).
 * Re-established damaged organization **IT infrastructure** following conflict, leading to seamless resumption of classes and key activities within the following month.
+
 **Skills Applied:** MS Server Management, IT Infrastructure Support, Network Administration, Domain Control.
 
 ---
@@ -86,16 +91,16 @@
 ---
 
 ## 📚 Professional Training Opportunities
-
-* **Mastering Form Design in KoBo Toolbox – Advanced** | Humanitarian Data Solutions (August 2021)
-* **MEAL DPro Flex** | Humentum (July 2020)
-* **MEAL in Emergencies** | Institute for Capacity Strengthening (ICS) (March 2018)
-* **Information Security & Basic & Advanced Security on the Field** | UNDSS (June 2018 / December 2017)
-* **Building a Better Response – Complex Humanitarian Emergencies** | Humanitarian Academy, Harvard (May 2018)
-* **Leadership Skills Development (26 hours)** | Creative People’s Solutions (CPS) (May 2017)
-* **Oracle 11G DBA (68 hours)** | University of Science and Technology (February 2014)
-* **Oracle 10G Developer (80 hours)** | University of Science and Technology (February 2014)
-* **MCITP Windows Server Administration** | NYCT (November 2012)
+| :--- | :--- | :--- |
+* **Mastering Form Design in KoBo Toolbox – Advanced** | Humanitarian Data Solutions | August 2021
+* **MEAL DPro Flex** | Humentum | July 2020
+* **MEAL in Emergencies** | Institute for Capacity Strengthening (ICS) | March 2018
+* **Information Security & Basic & Advanced Security on the Field** | UNDSS | June 2018 / December 2017
+* **Building a Better Response – Complex Humanitarian Emergencies** | Humanitarian Academy, Harvard | May 2018
+* **Leadership Skills Development (26 hours)** | Creative People’s Solutions (CPS) | May 2017
+* **Oracle 11G DBA (68 hours)** | University of Science and Technology | February 2014
+* **Oracle 10G Developer (80 hours)** | University of Science and Technology | February 2014
+* **MCITP Windows Server Administration** | NYCT | November 2012
 
 ---
 
