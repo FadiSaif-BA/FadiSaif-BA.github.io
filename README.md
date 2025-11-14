@@ -10,9 +10,9 @@
 | :--- | :--- |
 | **Data Analysis & Modeling** | Data Wrangling, Data Quality Assurance (DQA), ETL Processes, Exploratory Data Analysis (EDA), Statistical Testing, Inferential Analysis. |
 | **Programming & Query Languages** | Python, SQL, Java. |
-| **Technical Tools & Platforms** | **Advanced Statistics:** SPSS, JMP, MS Excel (Advanced); 
-                                    **Database Management:** SQL Server, Oracle 11G; 
-                                    **IDE & BI:** MS Visual Studio, VS Code, Anaconda, Jupyter, MS Power BI. |
+| **Technical Tools & Platforms** | **Advanced Statistics:** SPSS, JMP, MS Excel (Advanced); |
+|                                 | **Database Management:** SQL Server, Oracle 11G; |
+|                                 | **IDE & BI:** MS Visual Studio, VS Code, Anaconda, Jupyter, MS Power BI. |
 | **Project & Program Management** | Project Lifecycle Management, Monitoring & Evaluation (M&E), Stakeholder Analysis, Coordination, Process Streamlining. |
 | **Strategic & Business Planning** | Strategic Planning & Execution, Organizational Design, Talent Development, Team Synergy & Cohesion, Critical Thinking, Problem Solving. |
 
