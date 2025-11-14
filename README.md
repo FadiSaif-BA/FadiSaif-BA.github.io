@@ -23,6 +23,7 @@
 ### Evaluation and Business Analyst, Independent – Self-Employed
 **Feb. 2025 – Present**
 * Contributed to the end-to-end design, analysis, and dissemination of research studies for local NGOs in Yemen, including being a lead analyst on the **“Business Environment and Investment Challenges Study in Aden”**.
+
 **Skills Applied:** Statistical analysis, Thematic analysis, IBM SPSS, SAS JMP, and Python.
 
 ### Senior MEL Advisor, JSI Research and Training Institute
