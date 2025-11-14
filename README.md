@@ -92,15 +92,15 @@
 
 ## 📚 Professional Training Opportunities
 | :--- | :--- | :--- |
-* **Mastering Form Design in KoBo Toolbox – Advanced** | Humanitarian Data Solutions | August 2021
-* **MEAL DPro Flex** | Humentum | July 2020
-* **MEAL in Emergencies** | Institute for Capacity Strengthening (ICS) | March 2018
-* **Information Security & Basic & Advanced Security on the Field** | UNDSS | June 2018 / December 2017
-* **Building a Better Response – Complex Humanitarian Emergencies** | Humanitarian Academy, Harvard | May 2018
-* **Leadership Skills Development (26 hours)** | Creative People’s Solutions (CPS) | May 2017
-* **Oracle 11G DBA (68 hours)** | University of Science and Technology | February 2014
-* **Oracle 10G Developer (80 hours)** | University of Science and Technology | February 2014
-* **MCITP Windows Server Administration** | NYCT | November 2012
+| **Mastering Form Design in KoBo Toolbox – Advanced** | Humanitarian Data Solutions | August 2021
+| **MEAL DPro Flex** | Humentum | July 2020
+| **MEAL in Emergencies** | Institute for Capacity Strengthening (ICS) | March 2018
+| **Information Security & Basic & Advanced Security on the Field** | UNDSS | June 2018 / December 2017
+| **Building a Better Response – Complex Humanitarian Emergencies** | Humanitarian Academy, Harvard | May 2018
+| **Leadership Skills Development (26 hours)** | Creative People’s Solutions (CPS) | May 2017
+| **Oracle 11G DBA (68 hours)** | University of Science and Technology | February 2014
+| **Oracle 10G Developer (80 hours)** | University of Science and Technology | February 2014
+| **MCITP Windows Server Administration** | NYCT | November 2012
 
 ---
 
