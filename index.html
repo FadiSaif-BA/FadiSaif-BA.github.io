@@ -85,9 +85,8 @@
         .hero {
             background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
             color: white;
-            padding: 6rem 2rem;
+            padding: 4rem 2rem;
             text-align: center;
-            min-height: 70vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -115,6 +114,10 @@
             position: relative;
             z-index: 10;
             animation: fadeInUp 0.8s ease-out;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
         }
 
         @keyframes fadeInUp {
@@ -126,6 +129,19 @@
                 opacity: 1;
                 transform: translateY(0);
             }
+        }
+
+        .hero-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid white;
+            object-fit: cover;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+
+        .hero-text {
+            max-width: 700px;
         }
 
         .hero h1 {
@@ -186,6 +202,29 @@
         .btn-secondary:hover {
             background: white;
             color: var(--primary);
+        }
+
+        .btn-deliverable {
+            background: var(--accent);
+            color: white;
+            font-weight: 600;
+            font-size: 0.9rem;
+            padding: 0.6rem 1.2rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .btn-deliverable:hover {
+            background: #059669;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+        }
+
+        .btn-deliverable i {
+            font-size: 0.8rem;
         }
 
         /* Metrics Section */
@@ -465,6 +504,27 @@
             font-weight: 600;
         }
 
+        .deliverables-section {
+            margin: 1.5rem 0;
+            padding: 1rem 0;
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .deliverables-label {
+            font-weight: 600;
+            color: var(--primary);
+            margin-bottom: 0.75rem;
+            display: block;
+        }
+
+        .deliverables-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            align-items: center;
+        }
+
         .project-toggle {
             color: var(--secondary);
             cursor: pointer;
@@ -545,61 +605,6 @@
             color: var(--text-light);
         }
 
-        /* References Section */
-        .references {
-            background: var(--light-bg);
-            padding: 4rem 2rem;
-        }
-
-        .references-container {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .references h2 {
-            font-size: 2rem;
-            margin-bottom: 3rem;
-            text-align: center;
-        }
-
-        .reference-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-        }
-
-        .reference-card {
-            background: white;
-            padding: 2rem;
-            border-radius: 0.75rem;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-        }
-
-        .ref-name {
-            font-size: 1.1rem;
-            font-weight: 700;
-            color: var(--primary);
-            margin-bottom: 0.5rem;
-        }
-
-        .ref-title {
-            color: var(--secondary);
-            font-weight: 600;
-            margin-bottom: 0.25rem;
-        }
-
-        .ref-org {
-            color: var(--text-light);
-            margin-bottom: 1rem;
-            font-size: 0.9rem;
-        }
-
-        .ref-contact {
-            color: var(--text-light);
-            font-size: 0.9rem;
-            line-height: 1.6;
-        }
-
         /* Footer */
         footer {
             background: var(--primary);
@@ -646,6 +651,11 @@
                 font-size: 1.2rem;
             }
 
+            .hero-image {
+                width: 120px;
+                height: 120px;
+            }
+
             .exp-header, .project-header {
                 flex-direction: column;
             }
@@ -688,13 +698,16 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
-            <h1>Fadi Ali Qasem Saif</h1>
-            <div class="title">Monitoring, Evaluation, Research & Learning (MERL) Specialist</div>
-            <div class="headline">10+ Years | $60M+ Implementation | 500,000+ People Impacted | 100% Audit Pass Rate</div>
-            <div class="cta-buttons">
-                <a href="mailto:fadi.saif@outlook.com" class="btn btn-primary">Email Me</a>
-                <a href="https://linkedin.com/in/fadisaif" class="btn btn-secondary" target="_blank">LinkedIn</a>
-                <a href="https://github.com/FadiSaif-BA" class="btn btn-secondary" target="_blank">GitHub</a>
+            <img src="FadiSaif.jpg" alt="Fadi Ali Qasem Saif" class="hero-image">
+            <div class="hero-text">
+                <h1>Fadi Ali Qasem Saif</h1>
+                <div class="title">Monitoring, Evaluation, Research & Learning (MERL) Specialist</div>
+                <div class="headline">10+ Years | $60M+ Implementation | 500,000+ People Impacted | 100% Audit Pass Rate</div>
+                <div class="cta-buttons">
+                    <a href="mailto:fadi.saif@outlook.com" class="btn btn-primary">Email Me</a>
+                    <a href="https://linkedin.com/in/fadisaif" class="btn btn-secondary" target="_blank">LinkedIn</a>
+                    <a href="https://github.com/FadiSaif-BA" class="btn btn-secondary" target="_blank">GitHub</a>
+                </div>
             </div>
         </div>
     </section>
@@ -936,6 +949,13 @@
                     <span class="metric-badge">5 DQA Criteria</span>
                     <span class="metric-badge">300K+ Beneficiaries</span>
                 </div>
+                <div class="deliverables-section">
+                    <span class="deliverables-label">📎 Deliverables:</span>
+                    <div class="deliverables-list">
+                        <a href="docs/MIHR_MEL_Manual.pdf" class="btn btn-deliverable" target="_blank">📄 Manual PDF</a>
+                        <a href="https://github.com/FadiSaif-BA/merl-resources" class="btn btn-deliverable" target="_blank">💾 GitHub Resources</a>
+                    </div>
+                </div>
                 <div class="project-toggle" onclick="toggleProject(this)">+ Show Details</div>
                 <div class="project-details">
                     <div class="detail-section">
@@ -974,6 +994,12 @@
                     <span class="metric-badge">5-Tier Verification</span>
                     <span class="metric-badge">100% Audit Pass</span>
                 </div>
+                <div class="deliverables-section">
+                    <span class="deliverables-label">📎 Deliverables:</span>
+                    <div class="deliverables-list">
+                        <a href="docs/EALAAF_MEAL_System_Manual.pdf" class="btn btn-deliverable" target="_blank">📄 Manual PDF</a>
+                    </div>
+                </div>
                 <div class="project-toggle" onclick="toggleProject(this)">+ Show Details</div>
                 <div class="project-details">
                     <div class="detail-section">
@@ -1007,6 +1033,13 @@
                     <span class="metric-badge">34 Enumerators</span>
                     <span class="metric-badge">13 Districts</span>
                     <span class="metric-badge">230K+ Population</span>
+                </div>
+                <div class="deliverables-section">
+                    <span class="deliverables-label">📎 Deliverables:</span>
+                    <div class="deliverables-list">
+                        <a href="docs/MIHR_HFA_Report_2024.pdf" class="btn btn-deliverable" target="_blank">📄 Assessment Report</a>
+                        <a href="dashboards/MIHR_HFA_Dashboard.html" class="btn btn-deliverable" target="_blank">📊 Data Dashboard</a>
+                    </div>
                 </div>
                 <div class="project-toggle" onclick="toggleProject(this)">+ Show Details</div>
                 <div class="project-details">
@@ -1043,6 +1076,13 @@
                     <span class="metric-badge">82.1% Market Improvement</span>
                     <span class="metric-badge">98.8% Satisfaction</span>
                 </div>
+                <div class="deliverables-section">
+                    <span class="deliverables-label">📎 Deliverables:</span>
+                    <div class="deliverables-list">
+                        <a href="docs/Beyond_Food_Impact_Study.pdf" class="btn btn-deliverable" target="_blank">📄 Research Report</a>
+                        <a href="https://github.com/FadiSaif-BA/impact-analysis" class="btn btn-deliverable" target="_blank">💻 Analysis Code</a>
+                    </div>
+                </div>
                 <div class="project-toggle" onclick="toggleProject(this)">+ Show Details</div>
                 <div class="project-details">
                     <div class="detail-section">
@@ -1078,6 +1118,13 @@
                     <span class="metric-badge">12 Month Follow-up</span>
                     <span class="metric-badge">2-Year ROI</span>
                 </div>
+                <div class="deliverables-section">
+                    <span class="deliverables-label">📎 Deliverables:</span>
+                    <div class="deliverables-list">
+                        <a href="docs/Drip_Irrigation_Study.pdf" class="btn btn-deliverable" target="_blank">📄 Study Report</a>
+                        <a href="code/cba_irrigation_analysis.py" class="btn btn-deliverable" target="_blank">🐍 Python Script</a>
+                    </div>
+                </div>
                 <div class="project-toggle" onclick="toggleProject(this)">+ Show Details</div>
                 <div class="project-details">
                     <div class="detail-section">
@@ -1112,6 +1159,12 @@
                     <span class="metric-badge">5 KIIs</span>
                     <span class="metric-badge">39K Population</span>
                     <span class="metric-badge">$200K Secured</span>
+                </div>
+                <div class="deliverables-section">
+                    <span class="deliverables-label">📎 Deliverables:</span>
+                    <div class="deliverables-list">
+                        <a href="docs/Marib_Needs_Assessment.pdf" class="btn btn-deliverable" target="_blank">📄 Assessment Report</a>
+                    </div>
                 </div>
                 <div class="project-toggle" onclick="toggleProject(this)">+ Show Details</div>
                 <div class="project-details">
@@ -1165,46 +1218,6 @@
                 <li>✓ Oracle 11G DBA – 68 hours (Feb 2014)</li>
                 <li>✓ Oracle 10G Developer – 80 hours (Feb 2014)</li>
             </ul>
-        </div>
-    </section>
-
-    <!-- References Section -->
-    <section class="references" id="references">
-        <div class="references-container">
-            <h2>Professional References</h2>
-            <div class="reference-grid">
-                <div class="reference-card">
-                    <div class="ref-name">Amgad Anis Ahmed</div>
-                    <div class="ref-title">Project Director</div>
-                    <div class="ref-org">JSI Research and Training Institute</div>
-                    <div class="ref-contact">
-                        <strong>Phone:</strong> +967 771 157 626<br>
-                        <strong>Email:</strong> AAnees@momentumihr.org<br>
-                        <strong>Relationship:</strong> Line manager at JSI
-                    </div>
-                </div>
-
-                <div class="reference-card">
-                    <div class="ref-name">Gift Thom Banda</div>
-                    <div class="ref-title">Design, Monitoring & Evaluation Manager</div>
-                    <div class="ref-org">World Vision International</div>
-                    <div class="ref-contact">
-                        <strong>Phone:</strong> +265 996 436 138<br>
-                        <strong>Email:</strong> thom_gift@wvi.org<br>
-                        <strong>Relationship:</strong> Former line manager at ADRA Yemen
-                    </div>
-                </div>
-
-                <div class="reference-card">
-                    <div class="ref-name">Waddah Mohammed Al-Da'eri</div>
-                    <div class="ref-title">Project Manager</div>
-                    <div class="ref-org">ADRA Yemen</div>
-                    <div class="ref-contact">
-                        <strong>Phone:</strong> +967 734 013 25<br>
-                        <strong>Relationship:</strong> Senior leadership at ADRA Yemen
-                    </div>
-                </div>
-            </div>
         </div>
     </section>
 
