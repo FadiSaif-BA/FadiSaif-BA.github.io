@@ -1,0 +1,1279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fadi Ali Qasem Saif - MERL Specialist Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #1a3a52;
+            --secondary: #0d9488;
+            --accent: #10b981;
+            --light-bg: #f8fafc;
+            --text-dark: #1e293b;
+            --text-light: #64748b;
+            --border: #e2e8f0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+            color: var(--text-dark);
+            background: #ffffff;
+            line-height: 1.6;
+        }
+
+        /* Header & Navigation */
+        header {
+            position: sticky;
+            top: 0;
+            background: rgba(26, 58, 82, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 1rem 2rem;
+            z-index: 1000;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-weight: 700;
+            color: white;
+            font-size: 1.2rem;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--secondary);
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                gap: 1rem;
+                font-size: 0.8rem;
+            }
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: white;
+            padding: 6rem 2rem;
+            text-align: center;
+            min-height: 70vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px);
+            background-size: 50px 50px;
+            animation: float 20s linear infinite;
+        }
+
+        @keyframes float {
+            0% { transform: translate(0, 0); }
+            100% { transform: translate(50px, 50px); }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 10;
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 0.5rem;
+            font-weight: 800;
+            letter-spacing: -1px;
+        }
+
+        .hero .title {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            opacity: 0.95;
+        }
+
+        .hero .headline {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 0.5rem;
+            font-size: 1rem;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.3s;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background: white;
+            color: var(--primary);
+            font-weight: 600;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+            font-weight: 600;
+        }
+
+        .btn-secondary:hover {
+            background: white;
+            color: var(--primary);
+        }
+
+        /* Metrics Section */
+        .metrics {
+            background: var(--light-bg);
+            padding: 4rem 2rem;
+        }
+
+        .metrics-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .metrics h2 {
+            text-align: center;
+            margin-bottom: 3rem;
+            font-size: 2rem;
+        }
+
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .metric-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 0.75rem;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            transition: all 0.3s;
+            border-left: 4px solid var(--secondary);
+        }
+
+        .metric-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 24px rgba(0,0,0,0.12);
+        }
+
+        .metric-value {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--secondary);
+            margin-bottom: 0.5rem;
+        }
+
+        .metric-label {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--text-dark);
+            margin-bottom: 0.5rem;
+        }
+
+        .metric-desc {
+            font-size: 0.85rem;
+            color: var(--text-light);
+        }
+
+        /* Summary Section */
+        .summary {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        .summary h2 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .summary p {
+            font-size: 1.05rem;
+            line-height: 1.8;
+            color: var(--text-light);
+            margin-bottom: 1.5rem;
+            text-align: justify;
+        }
+
+        /* Skills Section */
+        .skills {
+            background: var(--light-bg);
+            padding: 4rem 2rem;
+        }
+
+        .skills-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .skills h2 {
+            font-size: 2rem;
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+
+        .skill-category {
+            margin-bottom: 2.5rem;
+        }
+
+        .skill-category h3 {
+            font-size: 1.3rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--secondary);
+        }
+
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .skill-tag {
+            background: white;
+            padding: 0.5rem 1rem;
+            border-radius: 2rem;
+            font-size: 0.9rem;
+            color: var(--primary);
+            border: 1px solid var(--border);
+            transition: all 0.3s;
+        }
+
+        .skill-tag:hover {
+            background: var(--secondary);
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        /* Experience Section */
+        .experience {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        .experience h2 {
+            font-size: 2rem;
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+
+        .experience-item {
+            background: white;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 0.75rem;
+            border-left: 4px solid var(--secondary);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            transition: all 0.3s;
+        }
+
+        .experience-item:hover {
+            box-shadow: 0 8px 16px rgba(0,0,0,0.12);
+        }
+
+        .exp-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 1rem;
+        }
+
+        .exp-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .exp-dates {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            background: var(--light-bg);
+            padding: 0.25rem 0.75rem;
+            border-radius: 0.25rem;
+        }
+
+        .exp-org {
+            color: var(--text-light);
+            margin-bottom: 1rem;
+            font-style: italic;
+        }
+
+        .exp-achievement {
+            margin-left: 1rem;
+            margin-bottom: 0.75rem;
+            color: var(--text-light);
+        }
+
+        /* Projects Section */
+        .projects {
+            background: var(--light-bg);
+            padding: 4rem 2rem;
+        }
+
+        .projects-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .projects h2 {
+            font-size: 2rem;
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+
+        .project-card {
+            background: white;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 0.75rem;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+        }
+
+        .project-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 1rem;
+        }
+
+        .project-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--primary);
+            flex: 1;
+        }
+
+        .project-type {
+            background: var(--secondary);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 2rem;
+            font-size: 0.75rem;
+            font-weight: 600;
+            white-space: nowrap;
+            margin-left: 1rem;
+        }
+
+        .project-meta {
+            display: flex;
+            gap: 2rem;
+            margin-bottom: 1rem;
+            flex-wrap: wrap;
+            font-size: 0.9rem;
+            color: var(--text-light);
+        }
+
+        .project-abstract {
+            color: var(--text-light);
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+
+        .project-metrics {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-bottom: 1rem;
+        }
+
+        .metric-badge {
+            background: linear-gradient(135deg, var(--secondary) 0%, var(--accent) 100%);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        .project-toggle {
+            color: var(--secondary);
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-top: 1rem;
+        }
+
+        .project-details {
+            display: none;
+            margin-top: 1.5rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border);
+        }
+
+        .project-details.active {
+            display: block;
+        }
+
+        .detail-section {
+            margin-bottom: 1.5rem;
+        }
+
+        .detail-section h4 {
+            font-size: 1rem;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+
+        .detail-section p, .detail-section li {
+            color: var(--text-light);
+            line-height: 1.6;
+            margin-bottom: 0.5rem;
+        }
+
+        .detail-section ul {
+            margin-left: 1.5rem;
+        }
+
+        /* Education Section */
+        .education {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        .education h2 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .education-item {
+            margin-bottom: 2rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .education-item:last-child {
+            border-bottom: none;
+        }
+
+        .edu-degree {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .edu-institution {
+            color: var(--text-light);
+            margin-bottom: 0.25rem;
+        }
+
+        .edu-dates {
+            font-size: 0.9rem;
+            color: var(--text-light);
+        }
+
+        /* References Section */
+        .references {
+            background: var(--light-bg);
+            padding: 4rem 2rem;
+        }
+
+        .references-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .references h2 {
+            font-size: 2rem;
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+
+        .reference-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .reference-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 0.75rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+
+        .ref-name {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .ref-title {
+            color: var(--secondary);
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+        }
+
+        .ref-org {
+            color: var(--text-light);
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+        }
+
+        .ref-contact {
+            color: var(--text-light);
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--primary);
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .footer-link {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-link:hover {
+            color: var(--secondary);
+        }
+
+        .footer-text {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero .title {
+                font-size: 1.2rem;
+            }
+
+            .exp-header, .project-header {
+                flex-direction: column;
+            }
+
+            .exp-dates, .project-type {
+                margin-left: 0;
+                margin-top: 0.5rem;
+            }
+
+            .project-meta {
+                gap: 1rem;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .metrics-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">Fadi Saif</div>
+            <ul class="nav-links">
+                <li><a href="#metrics">Impact</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Fadi Ali Qasem Saif</h1>
+            <div class="title">Monitoring, Evaluation, Research & Learning (MERL) Specialist</div>
+            <div class="headline">10+ Years | $60M+ Implementation | 500,000+ People Impacted | 100% Audit Pass Rate</div>
+            <div class="cta-buttons">
+                <a href="mailto:fadi.saif@outlook.com" class="btn btn-primary">Email Me</a>
+                <a href="https://linkedin.com/in/fadisaif" class="btn btn-secondary" target="_blank">LinkedIn</a>
+                <a href="https://github.com/FadiSaif-BA" class="btn btn-secondary" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Metrics Section -->
+    <section class="metrics" id="metrics">
+        <div class="metrics-container">
+            <h2>Key Impact Metrics</h2>
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <div class="metric-value">$60M+</div>
+                    <div class="metric-label">Implementation Value</div>
+                    <div class="metric-desc">Managed through MERL activities</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">$30M+</div>
+                    <div class="metric-label">Grants Secured</div>
+                    <div class="metric-desc">Through proposal development</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">500K+</div>
+                    <div class="metric-label">People Impacted</div>
+                    <div class="metric-desc">Across 18+ major projects</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">100%</div>
+                    <div class="metric-label">Audit Pass Rate</div>
+                    <div class="metric-desc">All donor audits passed</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">18</div>
+                    <div class="metric-label">Major Deliverables</div>
+                    <div class="metric-desc">Systems & assessments</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">160+</div>
+                    <div class="metric-label">Health Facilities</div>
+                    <div class="metric-desc">Assessed across projects</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">110K+</div>
+                    <div class="metric-label">Beneficiaries Monitored</div>
+                    <div class="metric-desc">Through routine systems</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">6</div>
+                    <div class="metric-label">MERL Systems</div>
+                    <div class="metric-desc">Comprehensive manuals</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Summary Section -->
+    <section class="summary">
+        <h2>Professional Overview</h2>
+        <p>
+            Results-oriented MERL expert with over 10 years of progressive experience in humanitarian aid and international development. Demonstrated expertise in designing and implementing comprehensive monitoring, evaluation, research, and learning systems for large-scale, multi-sectoral programs funded by USAID, UN-OCHA, and the US Department of State.
+        </p>
+        <p>
+            Proficient in Python, SQL, R, SPSS, Power BI, and advanced data analytics. Proven ability to manage $60M+ in implementation value while securing $30M+ in funding through strategic proposal development. Currently pursuing an MBA at Liverpool John Moores University (Merit) with an upcoming MSc in Business Analytics from the University of Kent (Sep 2026).
+        </p>
+        <p>
+            Expertise spans Food Security, Cash Assistance, WASH, Nutrition, Health, and Education sectors. Successfully led 18+ major projects including system development, impact research, multi-sectoral assessments, and routine monitoring activities across fragile and conflict-affected settings in Yemen.
+        </p>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="skills-container">
+            <h2>Core Competencies</h2>
+            
+            <div class="skill-category">
+                <h3>Data Analysis & Modeling</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Data Wrangling</span>
+                    <span class="skill-tag">DQA</span>
+                    <span class="skill-tag">ETL Processes</span>
+                    <span class="skill-tag">EDA</span>
+                    <span class="skill-tag">Statistical Testing</span>
+                    <span class="skill-tag">Inferential Analysis</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3>Programming & Query Languages</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">SQL</span>
+                    <span class="skill-tag">R</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3>Technical Tools & Platforms</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">SPSS</span>
+                    <span class="skill-tag">JMP</span>
+                    <span class="skill-tag">MS Excel (Advanced)</span>
+                    <span class="skill-tag">SQL Server</span>
+                    <span class="skill-tag">SQLite</span>
+                    <span class="skill-tag">Oracle 11G</span>
+                    <span class="skill-tag">MS Visual Studio</span>
+                    <span class="skill-tag">VS Code</span>
+                    <span class="skill-tag">Anaconda</span>
+                    <span class="skill-tag">Jupyter</span>
+                    <span class="skill-tag">Power BI</span>
+                    <span class="skill-tag">Kobo Toolbox</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3>Project & Program Management</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Project Lifecycle Management</span>
+                    <span class="skill-tag">M&E Systems</span>
+                    <span class="skill-tag">Stakeholder Analysis</span>
+                    <span class="skill-tag">Coordination</span>
+                    <span class="skill-tag">Process Streamlining</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3>Strategic & Business Planning</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Strategic Planning</span>
+                    <span class="skill-tag">Organizational Design</span>
+                    <span class="skill-tag">Talent Development</span>
+                    <span class="skill-tag">Team Leadership</span>
+                    <span class="skill-tag">Critical Thinking</span>
+                    <span class="skill-tag">Problem Solving</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience" id="experience">
+        <h2>Professional Experience</h2>
+        
+        <div class="experience-item">
+            <div class="exp-header">
+                <div>
+                    <div class="exp-title">Evaluation and Business Analyst</div>
+                    <div class="exp-org">Independent – Self-Employed</div>
+                </div>
+                <div class="exp-dates">Feb 2025 – Present</div>
+            </div>
+            <div class="exp-achievement">• End-to-end design, analysis, and dissemination of research studies for local NGOs in Yemen</div>
+            <div class="exp-achievement">• Lead analyst on "Business Environment and Investment Challenges Study in Aden"</div>
+            <div class="exp-achievement">• Skills: Statistical Analysis, Thematic Analysis, IBM SPSS, SAS JMP, Python</div>
+        </div>
+
+        <div class="experience-item">
+            <div class="exp-header">
+                <div>
+                    <div class="exp-title">Senior MEL Advisor</div>
+                    <div class="exp-org">JSI Research and Training Institute, Inc.</div>
+                </div>
+                <div class="exp-dates">Jun 2023 – Feb 2025</div>
+            </div>
+            <div class="exp-achievement">• Developed comprehensive MEL system including MERL Manual, data pipelines, and SOPs</div>
+            <div class="exp-achievement">• Led Health Facility Assessment of 100 facilities across Aden, Lahj, and Taiz</div>
+            <div class="exp-achievement">• Designed and engineered project database using SQL and Excel with ETL automation</div>
+            <div class="exp-achievement">• Served as Acting Project Director for 2 months, navigated 30% budget cuts</div>
+        </div>
+
+        <div class="experience-item">
+            <div class="exp-header">
+                <div>
+                    <div class="exp-title">MEAL Coordinator</div>
+                    <div class="exp-org">Polish Humanitarian Action (PAH)</div>
+                </div>
+                <div class="exp-dates">Apr 2022 – Jun 2023</div>
+            </div>
+            <div class="exp-achievement">• Led 9 post-service monitoring activities using PPS sampling for 450+ beneficiaries</div>
+            <div class="exp-achievement">• Oversaw PSM targeting 16,369 IDPs across 16 IDP sites in high-insecurity context</div>
+            <div class="exp-achievement">• Designed 3 multi-sectoral needs assessments securing $200K USD funding (highest score)</div>
+        </div>
+
+        <div class="experience-item">
+            <div class="exp-header">
+                <div>
+                    <div class="exp-title">MEAL Coordinator</div>
+                    <div class="exp-org">ADRA Yemen</div>
+                </div>
+                <div class="exp-dates">Nov 2020 – Mar 2022</div>
+            </div>
+            <div class="exp-achievement">• Developed and managed $35M MEAL system with standardized data quality procedures</div>
+            <div class="exp-achievement">• Led 4 impact research initiatives across food assistance and livelihoods</div>
+            <div class="exp-achievement">• Participated in project design securing $30M+ in USAID/BHA funding</div>
+        </div>
+
+        <div class="experience-item">
+            <div class="exp-header">
+                <div>
+                    <div class="exp-title">Monitoring and Evaluation Officer</div>
+                    <div class="exp-org">ADRA Yemen</div>
+                </div>
+                <div class="exp-dates">Apr 2019 – Oct 2020</div>
+            </div>
+            <div class="exp-achievement">• Devised comprehensive data collection and reporting mechanism bolstering transparency</div>
+            <div class="exp-achievement">• Implemented baseline and endline studies for USAID/BHA proposal design</div>
+        </div>
+
+        <div class="experience-item">
+            <div class="exp-header">
+                <div>
+                    <div class="exp-title">International Education Assistant</div>
+                    <div class="exp-org">AMIDEAST Yemen</div>
+                </div>
+                <div class="exp-dates">Jun 2014 – Nov 2017</div>
+            </div>
+            <div class="exp-achievement">• Managed international education: 50+ advice seekers, 24 international students deployed</div>
+            <div class="exp-achievement">• Achieved 98% tests on schedule, 100% audit compliance (ETS, College Board)</div>
+            <div class="exp-achievement">• Re-established IT infrastructure post-conflict within one month</div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="projects-container">
+            <h2>Major Projects Portfolio (18 Deliverables)</h2>
+            
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-title">MOMENTUM Integrated Health Resilience (MIHR) – MERL Manual</div>
+                    <span class="project-type">Manual</span>
+                </div>
+                <div class="project-meta">
+                    <span><strong>Organization:</strong> JSI Research & Training Institute</span>
+                    <span><strong>Dates:</strong> Oct 2022 – Sep 2023</span>
+                    <span><strong>Donor:</strong> USAID / MOMENTUM</span>
+                </div>
+                <div class="project-abstract">Foundational MEL system guidance defining monitoring, evaluation, research, and learning procedures for MIHR Yemen, establishing consistent framework for planning aligned with USAID ADS 201.</div>
+                <div class="project-metrics">
+                    <span class="metric-badge">69 Pages</span>
+                    <span class="metric-badge">35+ Indicators</span>
+                    <span class="metric-badge">5 DQA Criteria</span>
+                    <span class="metric-badge">300K+ Beneficiaries</span>
+                </div>
+                <div class="project-toggle" onclick="toggleProject(this)">+ Show Details</div>
+                <div class="project-details">
+                    <div class="detail-section">
+                        <h4>Methodology</h4>
+                        <p>Full MEL cycle framework including Performance Monitoring Plan, Reference Sheets, DQA framework (Validity, Reliability, Timeliness, Precision, Integrity), ethical data management, and learning adaptation framework.</p>
+                    </div>
+                    <div class="detail-section">
+                        <h4>Key Findings</h4>
+                        <ul>
+                            <li>Institutionalized MEL operations for MIHR Yemen</li>
+                            <li>Adopted across partners as reference for reporting and validation</li>
+                            <li>Pioneered Fragility, Crisis, and Complexity assessment model</li>
+                        </ul>
+                    </div>
+                    <div class="detail-section">
+                        <h4>Impact</h4>
+                        <p>Became core MEL guidance document adopted by JSI, MoPHP, and implementing partners for 300,000+ beneficiaries.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-title">EALAAF MEAL System Manual</div>
+                    <span class="project-type">Manual</span>
+                </div>
+                <div class="project-meta">
+                    <span><strong>Organization:</strong> ADRA Yemen</span>
+                    <span><strong>Dates:</strong> Jan 2020</span>
+                    <span><strong>Donor:</strong> USAID / Food for Peace</span>
+                </div>
+                <div class="project-abstract">Complete MEAL system for $25M USAID FFP food security project serving 105,000 individuals with comprehensive data quality assurance framework contributing to 100% donor audit pass rate.</div>
+                <div class="project-metrics">
+                    <span class="metric-badge">120 Pages</span>
+                    <span class="metric-badge">8 Data Flows</span>
+                    <span class="metric-badge">5-Tier Verification</span>
+                    <span class="metric-badge">100% Audit Pass</span>
+                </div>
+                <div class="project-toggle" onclick="toggleProject(this)">+ Show Details</div>
+                <div class="project-details">
+                    <div class="detail-section">
+                        <h4>Key Outcomes</h4>
+                        <ul>
+                            <li>100% donor audit pass rate (6/6 audits)</li>
+                            <li>90%+ beneficiary CFM awareness achieved</li>
+                            <li>1,000+ complaints handled annually with 95%+ resolution</li>
+                        </ul>
+                    </div>
+                    <div class="detail-section">
+                        <h4>Impact</h4>
+                        <p>Adopted by ADRA International HQ as model for other country programs serving 105,000 beneficiaries.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-title">Yemen Health Facility Assessment (MIHR)</div>
+                    <span class="project-type">Assessment</span>
+                </div>
+                <div class="project-meta">
+                    <span><strong>Organization:</strong> JSI / MOMENTUM</span>
+                    <span><strong>Dates:</strong> Oct 2023 – Jul 2024</span>
+                    <span><strong>Donor:</strong> USAID / MOMENTUM</span>
+                </div>
+                <div class="project-abstract">First comprehensive national-level baseline of nutrition service availability across Aden, Lahj, and Taiz governorates, providing evidence base for intervention prioritization across 230,000+ population.</div>
+                <div class="project-metrics">
+                    <span class="metric-badge">100 Facilities</span>
+                    <span class="metric-badge">34 Enumerators</span>
+                    <span class="metric-badge">13 Districts</span>
+                    <span class="metric-badge">230K+ Population</span>
+                </div>
+                <div class="project-toggle" onclick="toggleProject(this)">+ Show Details</div>
+                <div class="project-details">
+                    <div class="detail-section">
+                        <h4>Key Findings</h4>
+                        <ul>
+                            <li>96% of Aden, 78% Lahj, 75% Taiz facilities provide routine child nutrition services</li>
+                            <li>60% of facilities lack adequate MUAC tapes for malnutrition screening</li>
+                            <li>40% report inadequate nutrition-trained staff</li>
+                            <li>70% have functional CHV networks but weak supervision</li>
+                        </ul>
+                    </div>
+                    <div class="detail-section">
+                        <h4>Impact</h4>
+                        <p>Informed MIHR interventions: 500+ health workers trained, 100 facilities equipped, 13 district offices strengthened.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-title">Beyond Food Provision and Job Creation – Impact Study</div>
+                    <span class="project-type">Impact Evaluation</span>
+                </div>
+                <div class="project-meta">
+                    <span><strong>Organization:</strong> ADRA Yemen</span>
+                    <span><strong>Dates:</strong> Jan 2021</span>
+                    <span><strong>Donor:</strong> USAID / FFP & OFDA</span>
+                </div>
+                <div class="project-abstract">Assessment of economic and non-economic ripple effects of USAID-funded businesses on broader communities, evaluating complementarity between FFP food vouchers and OFDA livelihood restoration.</div>
+                <div class="project-metrics">
+                    <span class="metric-badge">691 Respondents</span>
+                    <span class="metric-badge">813 Jobs Created</span>
+                    <span class="metric-badge">82.1% Market Improvement</span>
+                    <span class="metric-badge">98.8% Satisfaction</span>
+                </div>
+                <div class="project-toggle" onclick="toggleProject(this)">+ Show Details</div>
+                <div class="project-details">
+                    <div class="detail-section">
+                        <h4>Key Findings</h4>
+                        <ul>
+                            <li>813 new jobs: 563 by businesses (483% increase), 250 by vendors (148% increase)</li>
+                            <li>82.1% non-beneficiary customers noticed increased market diversity</li>
+                            <li>51.6% businesses expanded to district level; 56.4% governorate level</li>
+                            <li>24% vendor-business transactions indicating market integration</li>
+                        </ul>
+                    </div>
+                    <div class="detail-section">
+                        <h4>Impact</h4>
+                        <p>Published on USAID DEC; informed future market-based humanitarian programming benefiting 110,000+ direct beneficiaries.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-title">Comparative Study: Drip vs Traditional Irrigation</div>
+                    <span class="project-type">Comparative Study</span>
+                </div>
+                <div class="project-meta">
+                    <span><strong>Organization:</strong> ADRA Yemen</span>
+                    <span><strong>Dates:</strong> Dec 2020</span>
+                    <span><strong>Donor:</strong> USAID / OFDA</span>
+                </div>
+                <div class="project-abstract">Cost-efficiency and water consumption analysis demonstrating drip irrigation as climate-smart alternative supporting livelihood recovery and water resource management in Yemen.</div>
+                <div class="project-metrics">
+                    <span class="metric-badge">75% Cost Reduction</span>
+                    <span class="metric-badge">85.5% Water Reduction</span>
+                    <span class="metric-badge">12 Month Follow-up</span>
+                    <span class="metric-badge">2-Year ROI</span>
+                </div>
+                <div class="project-toggle" onclick="toggleProject(this)">+ Show Details</div>
+                <div class="project-details">
+                    <div class="detail-section">
+                        <h4>Key Findings</h4>
+                        <ul>
+                            <li>Drip: 86 L/acre/day vs Traditional: 593 L/acre/day (85.5% reduction)</li>
+                            <li>Cost: Drip YER 269,573 vs Traditional YER 1,089,808 (75% reduction)</li>
+                            <li>Drip farmers expanded cultivation by up to +4 acres</li>
+                            <li>ROI: 45-60% annually after 2-year payback period</li>
+                        </ul>
+                    </div>
+                    <div class="detail-section">
+                        <h4>Impact</h4>
+                        <p>Influenced 5+ organizations to scale drip irrigation reaching 2,000+ farming households.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-title">Multi-Sectoral Needs Assessment – Marib</div>
+                    <span class="project-type">Assessment</span>
+                </div>
+                <div class="project-meta">
+                    <span><strong>Organization:</strong> Polish Humanitarian Action</span>
+                    <span><strong>Dates:</strong> Dec 2022</span>
+                    <span><strong>Donor:</strong> Polish Ministry of Foreign Affairs / ECHO</span>
+                </div>
+                <div class="project-abstract">Comprehensive assessment of humanitarian needs in Health, Nutrition, WASH, Food Security informing Polish Humanitarian Action's 2023 programming with $2M+ allocation.</div>
+                <div class="project-metrics">
+                    <span class="metric-badge">15 FGDs</span>
+                    <span class="metric-badge">5 KIIs</span>
+                    <span class="metric-badge">39K Population</span>
+                    <span class="metric-badge">$200K Secured</span>
+                </div>
+                <div class="project-toggle" onclick="toggleProject(this)">+ Show Details</div>
+                <div class="project-details">
+                    <div class="detail-section">
+                        <h4>Key Findings</h4>
+                        <ul>
+                            <li>All districts IPC Phase 4 (Emergency); 60% IDPs</li>
+                            <li>Food top unmet need; 15-20% acute food insecurity</li>
+                            <li>Global Acute Malnutrition 15-20%; SAM 3-5%</li>
+                            <li>55% health facilities functional; staff shortages; medicine stock-outs</li>
+                        </ul>
+                    </div>
+                    <div class="detail-section">
+                        <h4>Impact</h4>
+                        <p>Secured Polish MoFA funding with highest score; $2M+ 2023 programming reaching 35,000+ people.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="education" id="education">
+        <h2>Education & Credentials</h2>
+        
+        <div class="education-item">
+            <div class="edu-degree">Master of Business Administration (MBA) – General (PGCert: Merit)</div>
+            <div class="edu-institution">Liverpool John Moores University, United Kingdom</div>
+            <div class="edu-dates">Jan 2025 – Aug 2026 (In Progress)</div>
+        </div>
+
+        <div class="education-item">
+            <div class="edu-degree">Master of Science (MSc.) Business Analytics</div>
+            <div class="edu-institution">University of Kent, United Kingdom</div>
+            <div class="edu-dates">Sep 2026 – Sep 2027 (Pending)</div>
+        </div>
+
+        <div class="education-item">
+            <div class="edu-degree">Bachelor of Engineering (BEng.) Information Technology (CGPA 3.91)</div>
+            <div class="edu-institution">University of Aden, Yemen</div>
+            <div class="edu-dates">Sep 2008 – Mar 2014</div>
+        </div>
+
+        <div style="margin-top: 2rem; padding-top: 2rem; border-top: 1px solid var(--border);">
+            <h3 style="font-size: 1.2rem; color: var(--primary); margin-bottom: 1rem;">Professional Training</h3>
+            <ul style="list-style: none; color: var(--text-light); line-height: 2;">
+                <li>✓ Mastering Form Design in KoBo Toolbox – Advanced (Aug 2021)</li>
+                <li>✓ MEAL DPro Flex (Jul 2020)</li>
+                <li>✓ Leadership Skills Development – 26 hours (May 2017)</li>
+                <li>✓ Oracle 11G DBA – 68 hours (Feb 2014)</li>
+                <li>✓ Oracle 10G Developer – 80 hours (Feb 2014)</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- References Section -->
+    <section class="references" id="references">
+        <div class="references-container">
+            <h2>Professional References</h2>
+            <div class="reference-grid">
+                <div class="reference-card">
+                    <div class="ref-name">Amgad Anis Ahmed</div>
+                    <div class="ref-title">Project Director</div>
+                    <div class="ref-org">JSI Research and Training Institute</div>
+                    <div class="ref-contact">
+                        <strong>Phone:</strong> +967 771 157 626<br>
+                        <strong>Email:</strong> AAnees@momentumihr.org<br>
+                        <strong>Relationship:</strong> Line manager at JSI
+                    </div>
+                </div>
+
+                <div class="reference-card">
+                    <div class="ref-name">Gift Thom Banda</div>
+                    <div class="ref-title">Design, Monitoring & Evaluation Manager</div>
+                    <div class="ref-org">World Vision International</div>
+                    <div class="ref-contact">
+                        <strong>Phone:</strong> +265 996 436 138<br>
+                        <strong>Email:</strong> thom_gift@wvi.org<br>
+                        <strong>Relationship:</strong> Former line manager at ADRA Yemen
+                    </div>
+                </div>
+
+                <div class="reference-card">
+                    <div class="ref-name">Waddah Mohammed Al-Da'eri</div>
+                    <div class="ref-title">Project Manager</div>
+                    <div class="ref-org">ADRA Yemen</div>
+                    <div class="ref-contact">
+                        <strong>Phone:</strong> +967 734 013 25<br>
+                        <strong>Relationship:</strong> Senior leadership at ADRA Yemen
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="footer-content">
+            <h2 style="margin-bottom: 1.5rem; font-size: 1.5rem;">Get In Touch</h2>
+            <div class="footer-links">
+                <a href="mailto:fadi.saif@outlook.com" class="footer-link">✉ Email</a>
+                <a href="tel:+967771426129" class="footer-link">☎ Call</a>
+                <a href="https://linkedin.com/in/fadisaif" class="footer-link" target="_blank">LinkedIn</a>
+                <a href="https://github.com/FadiSaif-BA" class="footer-link" target="_blank">GitHub</a>
+                <a href="https://wa.me/967771426129" class="footer-link" target="_blank">WhatsApp</a>
+            </div>
+            <div class="footer-text">
+                <p><strong>Email:</strong> fadi.saif@outlook.com | tecfadba@gmail.com</p>
+                <p><strong>Phone:</strong> +967 771 426 129</p>
+                <p><strong>Location:</strong> Aden, Yemen</p>
+                <p style="margin-top: 1rem; opacity: 0.8;">© 2025 Fadi Ali Qasem Saif. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleProject(element) {
+            const details = element.nextElementSibling;
+            const isActive = details.classList.contains('active');
+            
+            // Close all other projects
+            document.querySelectorAll('.project-details.active').forEach(el => {
+                if (el !== details) {
+                    el.classList.remove('active');
+                    el.previousElementSibling.textContent = '+ Show Details';
+                }
+            });
+            
+            // Toggle current project
+            details.classList.toggle('active');
+            element.textContent = isActive ? '+ Show Details' : '- Hide Details';
+        }
+
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+
+        // Animate metrics on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animation = 'fadeInUp 0.6s ease-out';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.metric-card, .experience-item, .project-card').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
