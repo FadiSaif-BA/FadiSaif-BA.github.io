@@ -57,6 +57,33 @@
             font-size: 1.2rem;
         }
 
+        /* --- NEW / MODIFIED RULES FOR THE LOGO --- */
+
+/* This targets the <img> element directly */
+.header-logo {
+    height: 40px; /* Adjust this value as needed (e.g., 50px, 60px) */
+    width: auto; /* Ensures the aspect ratio is maintained */
+    /* You might want to remove any default vertical alignment if it causes issues */
+    vertical-align: middle; /* Helps with alignment if there's text next to it */
+}
+
+/* This targets the container div for the logo */
+.logo {
+    /* If you've replaced "Fadi Saif" text entirely with the image,
+       you can remove or adjust these text-specific properties: */
+    /* font-weight: 700; */
+    /* color: white; */
+    /* font-size: 1.2rem; */
+
+    /* If you want a bit more space around the logo, or if you plan to
+       add text *next* to the image inside this div later: */
+    display: flex; /* Use flexbox to easily align the image (and future text) */
+    align-items: center; /* Vertically center the image within the logo div */
+    /* gap: 10px; */ /* If you later add text like "Fadi Saif" next to the image */
+}
+
+/* --- END NEW / MODIFIED RULES --- */
+
         .nav-links {
             display: flex;
             gap: 2rem;
